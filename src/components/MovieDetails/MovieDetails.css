@@ -1,0 +1,139 @@
+.movie-details-wrapper {
+  background-color: #222831;
+  color: #DFD0B8;
+  padding: 40px 0;
+}
+
+.movie-details-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.poster-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.movie-poster2 {
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.movie-title {
+  font-size: 32px;
+  margin-bottom: 5px;
+  color: #DFD0B8;
+}
+
+.tagline {
+  font-style: italic;
+  color: #948979;
+  margin-bottom: 30px;
+}
+
+.movie-details-table {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.movie-details-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #393E46;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.movie-details-table th,
+.movie-details-table td {
+  padding: 15px 20px;
+  border-bottom: 1px solid #555;
+}
+
+.movie-details-table th {
+  background-color: #948979;
+  color: #222831;
+  font-weight: bold;
+  width: 180px;
+  text-align: left;
+}
+
+.movie-details-table td {
+  color: #EEEEEE;
+}
+
+.loading {
+  text-align: center;
+  padding: 100px;
+  font-size: 22px;
+  color: #DFD0B8;
+}
+.movie-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.movie-buttons .btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: none;
+  text-decoration: none;
+  background-color: #393E46;
+  color: #EEEEEE;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 150px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.movie-buttons .btn:hover {
+  background-color: #E2B616;
+  color: #ffffff;
+}
+
+.movie-buttons a.btn {
+  text-align: center;
+}
+
+.loader-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  text-align: center;
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid #eee;
+  border-top: 6px solid #00ADB5;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 15px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loader-wrapper p {
+  color: #393E46;
+  font-size: 18px;
+  font-weight: 500;
+}
+

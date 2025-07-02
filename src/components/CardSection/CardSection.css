@@ -1,0 +1,81 @@
+/* CardSection.css */
+.card-wrapper {
+  padding: 40px 0;
+  background-color: #393E46;
+  color: #DFD0B8;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #DFD0B8;
+  border-bottom: 2px solid #948979;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 equal columns */
+  gap: 20px;
+}
+
+.movie-card {
+  background-color: #222831;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+}
+
+.movie-poster {
+  width: 100%;
+  object-fit: cover;
+}
+
+.movie-info {
+  padding: 10px;
+}
+.movie-info div{
+  display: flex;
+  justify-content: space-between;
+}
+.movie-info h3 {
+  font-size: 18px;
+  margin: 0 0 30px;
+  color: #DFD0B8;
+}
+
+.movie-info p {
+  font-size: 14px;
+  color: #948979;
+}
+
+@media (max-width: 992px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.movie-card {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.movie-card h3,
+.movie-card p {
+  text-decoration: none;
+  color: inherit;
+}

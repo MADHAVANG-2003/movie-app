@@ -1,0 +1,98 @@
+/* App.css */
+
+.app-layout {
+  display: flex;
+  height: 100vh;
+  background-color: #393E46; /* matches sidebar hover */
+  font-family: 'Segoe UI', sans-serif;
+  color: #DFD0B8;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 20%; /* width of sidebar */
+  padding: 30px;
+  overflow-y: auto;
+  min-height: 100vh;
+  background-color: #393E46;
+  color: #DFD0B8;
+  transition: background 0.3s ease;
+}
+
+/* Typography Enhancements */
+.main-content h1,
+.main-content h2,
+.main-content h3 {
+  color: #948979;
+  margin-bottom: 15px;
+}
+
+.main-content p,
+.main-content span,
+.main-content li {
+  color: #DFD0B8;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Optional subtle box style */
+.card {
+  background-color: #222831;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+    padding: 20px;
+  }
+}
+/* Section.css - shared styles for all page headings */
+
+.section-wrapper {
+  padding: 40px 0;
+  background-color: #393E46;
+  color: #DFD0B8;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #222831;
+  border-left: 6px solid #948979;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.6s ease-out;
+}
+
+.section-header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #DFD0B8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section-header p {
+  font-size: 16px;
+  color: #948979;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
